@@ -1,0 +1,102 @@
+Create a complete, single-file React web application named "RiskMap." The application will consist of a login page and a multi-page dashboard accessible via a persistent sidebar and top navigation bar. The AI should generate all necessary dummy data for a functional frontend prototype.
+
+Technologies to Use:
+
+Frontend Framework: React
+
+Styling: Material-UI for components and a modern CSS framework like Tailwind CSS for layout and custom styling.
+
+Charting Library: Recharts for all data visualizations.
+
+Icons: @mui/icons-material for all icons.
+
+Core Languages: HTML, CSS, JavaScript
+
+Global Application Structure (App.js Component):
+
+Create a single-file React component that manages the entire application.
+
+The main layout should consist of a fixed-width left navigation sidebar and a top navbar that persists across all pages.
+
+Use a React state variable (e.g., currentPage) to conditionally render the correct page component (Login, Student Dashboard, etc.) within the main content area.
+
+The application should start on the Login Page.
+
+1. Login Page:
+Layout: Center the login form both horizontally and vertically on a neutral gray background. The form itself should be a white card with rounded corners and a drop shadow.
+
+Header: At the top of the form, display the app name: "RiskMap Login." Below it, include a placeholder image area for the institution's logo (https://via.placeholder.com/150).
+
+Form Fields: Two text input fields for "Username" and "Password." Both should be marked as required.
+
+User Type: Two radio buttons for "Parent" and "Student."
+
+Actions: A "Sign Up (New User)" link and a "Login" button.
+
+Functionality: Clicking the "Login" button should display a temporary alert "User logged in successfully!" and then switch the currentPage state to show the StudentDashboard component. Clicking "Sign Up" should also show a dummy alert.
+
+Footer: A thin, dark gray bar at the bottom with dummy text: "A Product For Educational Institute By RiskMap Inc." and "Updated On: [Current Date]."
+
+2. Student Dashboard:
+Header: A prominent card at the top displaying dummy student info.
+
+Widgets Grid: Use a responsive grid to arrange the following components side-by-side, mimicking a dashboard layout.
+
+Attendance (Line Chart): A card containing a Recharts LineChart showing dummy attendance data over the last 6 months.
+
+Overall Attendance (Donut Chart): A card with a Recharts PieChart (donut style) showing a dummy overall attendance percentage.
+
+Assignments (Pie Chart): A card with a Recharts PieChart visualizing dummy assignment statuses: "Submitted," "Pending," "Graded."
+
+Predictions (Card): A card displaying a dummy grade prediction.
+
+Progress (Bar Chart): A card with a Recharts BarChart showing dummy progress data in different subjects.
+
+Grades (Stepped Line Chart): A card with a Recharts LineChart using type="step" for dummy grade fluctuations over time.
+
+Current Grades (Card): A card displaying a dummy current grade.
+
+View Grade-books Section: A section with cards for each dummy year's report. Each card should have "View" and "Download" links that trigger dummy alerts.
+
+3. Class Info Page:
+Page Title: A main heading "Class Info."
+
+Time Table: A responsive Material-UI Table displaying a weekly timetable with dummy subjects and timings.
+
+Assignments: A section listing dummy assignments with name, last date, and a color-coded status (Done=Green, Expired=Red, Pending=Yellow).
+
+Mentor Details Card: A card with a placeholder image and dummy contact information for a mentor (Name, Phone, Email, School).
+
+Class Recordings: A list of dummy class recordings showing the date, topic, and a "Watch" button that triggers a dummy alert.
+
+4. Class Dashboard:
+Page Title: A main heading "At-Risk Students."
+
+Filters: A row with a search bar (for name, ID, or course) and a dropdown filter for "Risk Levels."
+
+Students Overview Table: A responsive Material-UI Table displaying a list of dummy students.
+
+Columns: Student Info (Name, ID), Course (Name, Year), Attendance, Trend (a Recharts sparkline with dummy data), GPA, Risk Level (a pill-shaped component with a color-coded label: HIGH=Red, MEDIUM=Blue, LOW=Green), and Actions (a "View Details" button).
+
+5. Document Locker:
+Page Title: A main heading "Documents."
+
+Document Grid: A responsive Material-UI Grid displaying a collection of document cards.
+
+Document Cards: Each card should have a placeholder icon (e.g., Description from @mui/icons-material) and a dummy document name (e.g., "AADHAAR Card," "PAN Card," "Vaccine Certificate"). Each card should be clickable and show a dummy alert.
+
+Add Button: A floating action button (FAB) with a plus icon (Add) positioned at the bottom right of the page. Clicking it should trigger a dummy alert.
+
+6. Digital Counselor Page:
+Page Title: A main heading "Digital Counselor."
+
+Your Strengths Section: A heading and a horizontal grid of three cards. Each card contains a Recharts donut chart showing dummy performance percentages for "Maths," "Science," and "English."
+
+Market Demands Section: A heading followed by text blocks or cards listing dummy career fields that are "In Demand" and those that are "Jobless."
+
+Best Options For You Section: A heading followed by a list of dummy recommended career fields, such as "Data Science," "Machine Learning."
+
+Terms and Conditions: A final card at the bottom with dummy text asking to agree to terms and conditions and accept cookies. Include "Accept" and "Reject" buttons that show dummy alerts.
+
+Final Instructions:
+The entire application should be contained within a single file. All functionality, data, and styling should be hardcoded for a front-end only prototype. No backend logic or API calls are required.
